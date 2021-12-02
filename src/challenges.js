@@ -85,11 +85,11 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let stringA = string.replace(/"a"/g , 1);
-  let stringE = stringA.replace(/"e"/g , 2);
-  let stringI = stringE.replace(/"i"/g , 3);
-  let stringO = stringI.replace(/"o"/g , 4);
-  let stringU = stringO.replace(/"u"/g , 5);
+  let stringA = string.replace(/a/g , "1");
+  let stringE = stringA.replace(/e/g , "2");
+  let stringI = stringE.replace(/i/g , "3");
+  let stringO = stringI.replace(/o/g , "4");
+  let stringU = stringO.replace(/u/g , "5");
   return stringU;
 }
 
@@ -102,25 +102,9 @@ function decode(string) {
   return stringU;
 }
 //(//g para expressão usada regularmente)
-
-// 9 - Crie uma função que Codifique e Decodifique
-// a -> 1
-// e -> 2
-// i -> 3
-// o -> 4
-// u -> 5
-// Crie duas funções: a primeira deverá se chamar encode e, ao receber uma string como parâmetro, deverá trocar todas as vogais minúsculas por números, de acordo com o formato a seguir:
+//segundo parametro entre aspas.
 
 
-// Ou seja, caso o parâmetro de encode seja "hi there!", o retorno deverá ser "h3 th2r2!".
-
-// A segunda função deverá se chamar decode e faz o contrário de encode - ou seja, recebe uma string contendo números no lugar de letras minúsculas e retornará uma string com vogais minúsculas no lugar dos números (então, caso o parâmetro de decode seja "h3 th2r2!", o retorno deverá ser "hi there!").
-
-// O que será verificado:
-
-// Retorne uma string codificada quando a função encode for utilizada
-
-// Retorne uma string decodificada quando a função decode for utilizada
 
 module.exports = {
   calcArea,
