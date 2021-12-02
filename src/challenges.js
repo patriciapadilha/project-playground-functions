@@ -53,33 +53,17 @@ function highestCount(numbersArray) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if(cat1 < cat2){
+  
+  if(Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
     return ("cat1");
-  } else if(cat2 < cat1){
+  } else if(Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)){
     return ("cat2");
-  } else if(cat2 === cat1){
+  } else {
     let message = "os gatos trombam e o rato foge";
     return (message);
   }  
 }
-// 7 - Crie uma função de Caça ao Rato
-// Imagine que existem dois gatos, os quais chamaremos de cat1 e cat2, e que ambos estão caçando um mesmo rato chamado mouse. Imagine que os animais estão em uma reta, cada um em uma posição representada por um número.
 
-// Sabendo disso, crie uma função chamada catAndMouse que, ao receber a posição de mouse, cat1 e cat2, nessa ordem, calcule as distâncias entre o rato e cada um dos gatos, em seguida, retorne qual dos felinos irá alcançar o rato primeiro (aquele que estiver mais perto do rato).
-
-// Exemplo: caso o gato cat2 esteja a 2 unidades de distância do rato, e cat1 esteja a 3 unidades, sua função deverá retornar "cat2".
-
-// Caso os gatos estejam na mesma distância do rato, a função deverá retornar a string "os gatos trombam e o rato foge".
-
-// O que será verificado:
-
-// Retorne a string 'cat2' caso a função catAndMouse receba os parâmetros onde gato cat2 esteja a 2 unidades de distância do rato e cat1 esteja a 3 unidades de distância do rato
-
-// Retorne a string 'cat1' caso a função catAndMouse receba os parâmetros onde gato cat1 esteja a 6 unidades de distância do rato e cat2 esteja a 12 unidades de distância do rato
-
-// Retorne a string 'os gatos trombam e o rato foge' caso a função catAndMouse receba os parâmetros onde os gatos estejam na mesma distância do rato
-
-//falta o ultimo teste.
 
 // Desafio 8
 function fizzBuzz(array) {
